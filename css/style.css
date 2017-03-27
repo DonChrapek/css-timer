@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+}
+
+.countdown:before {
+    content: '10987654321 I love CSS!';
+    display: inline-block;
+    width: 1ch;
+    height: 2ch;
+    overflow: hidden;
+    font-size: 45px;
+
+    animation-name: count;
+    animation-duration: 11s;
+    animation-timing-function: step-start;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes count {
+    0% {width: 0;
+    }
+    9.1% {text-indent: 0;
+        width: 2ch;
+    }
+    18.2% {text-indent: -2ch;
+        width: 1ch;
+    }
+    27.3% {text-indent: -3ch;
+        width: 1ch;
+    }
+    36.4% {text-indent: -4ch;
+        width: 1ch;
+    }
+    45.5% {text-indent: -5ch;
+        width: 1ch;
+    }
+    54.5% {text-indent: -6ch;
+        width: 1ch;
+    }
+    63.7% {text-indent: -7ch;
+        width: 1ch;
+    }
+    72.7% {text-indent: -8ch;
+        width: 1ch;
+    }
+    81.8% {text-indent: -9ch;
+        width: 1ch;
+    }
+    90.1% {text-indent: -10ch;
+        width: 1ch;
+    }
+    100% {text-indent: -14ch;
+        width: 290px;
+    }
+
+/*
+@keyframes count {
+    0% {text-indent: 0;
+        width: 2ch;
+    }
+    10% {text-indent: -2ch;
+        width: 1ch;
+    }
+    20% {text-indent: -3ch;
+        width: 1ch;
+    }
+    30% {text-indent: -4ch;
+        width: 1ch;
+    }
+    40% {text-indent: -5ch;
+        width: 1ch;
+    }
+    50% {text-indent: -6ch;
+        width: 1ch;
+    }
+    60% {text-indent: -7ch;
+        width: 1ch;
+    }
+    70% {text-indent: -8ch;
+        width: 1ch;
+    }
+    80% {text-indent: -9ch;
+        width: 1ch;
+    }
+    90% {text-indent: -10ch;
+        width: 1ch;
+    }
+    100% {text-indent: -11ch;
+        width: 90px;
+    }
+}*/
